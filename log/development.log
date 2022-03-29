@@ -442,3 +442,19 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 41ms (Views: 30.0ms | ActiveRecord: 4.8ms | Allocations: 49175)
 
 
+Started GET "/" for 127.0.0.1 at 2022-03-29 22:29:48 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 15ms (ActiveRecord: 0.0ms | Allocations: 5755)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-03-29 22:29:48 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 680)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 3397)
+  Rendered layout layouts/application.html.erb (Duration: 35.6ms | Allocations: 38462)
+Completed 200 OK in 50ms (Views: 39.5ms | ActiveRecord: 4.0ms | Allocations: 49223)
+
+
