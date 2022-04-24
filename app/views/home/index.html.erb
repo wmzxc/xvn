@@ -1,2 +1,21 @@
-<h1>Home#index</h1>
+<%= link_to 'Menu', 'http://127.0.0.1:3000/users/sign_in' %>
+<h1>【Member】</h1>
+
 <p>Find me in app/views/home/index.html.erb</p>
+
+<% @users.each do |user| %>
+    <ul>
+    <%= link_to user.fullname, user  %>
+
+    </ul>
+    
+<% end %>
+    
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>

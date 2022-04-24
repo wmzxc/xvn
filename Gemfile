@@ -73,3 +73,7 @@ end
 
 gem 'devise'
 gem 'devise-i18n'
+
+
+gem 'rake'  
+gem 'webpacker', '~> 3.5'
