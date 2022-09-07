@@ -80,7 +80,9 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  <<: *default
-  database: lkj_production
-  username: lkj
-  password: <%= ENV["LKJ_DATABASE_PASSWORD"] %>
+     url: <%= ENV['DATABASE_URL'] %>
+#
+#<<: *default
+#  database: lkj_production
+#  username: lkj
+#  password: <%= ENV["LKJ_DATABASE_PASSWORD"] %>
